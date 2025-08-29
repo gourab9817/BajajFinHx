@@ -1,10 +1,11 @@
-/* Minimal, accessible styles (3-5 colors: primary blue, neutrals) */
+/* Minimal, accessible styles (light theme, primary blue) */
 :root {
-  --bg: #0b0c10;
-  --card: #111217;
-  --text: #e6e6e6;
-  --muted: #a8a8a8;
-  --primary: #3b82f6; /* blue */
+  --bg: #ffffff;
+  --card: #f8fafc;
+  --text: #0f172a;
+  --muted: #64748b;
+  --primary: #2563eb; /* blue */
+  --border: #e2e8f0;
 }
 
 * {
@@ -42,7 +43,7 @@ body {
 
 .card {
   background: var(--card);
-  border: 1px solid #1b1c22;
+  border: 1px solid var(--border);
   border-radius: 10px;
   padding: 16px;
   display: flex;
@@ -55,9 +56,9 @@ body {
 }
 .textarea {
   width: 100%;
-  background: #0f1116;
+  background: #ffffff;
   color: var(--text);
-  border: 1px solid #1f2530;
+  border: 1px solid var(--border);
   border-radius: 8px;
   padding: 10px;
   resize: vertical;
@@ -77,14 +78,14 @@ body {
   font-weight: 600;
 }
 .button.secondary {
-  background: #2a2f3a;
+  background: #e2e8f0;
   color: var(--text);
 }
 
 .pre {
   margin: 0;
-  background: #0f1116;
-  border: 1px solid #1f2530;
+  background: #ffffff;
+  border: 1px solid var(--border);
   border-radius: 8px;
   padding: 12px;
   overflow: auto;
@@ -98,5 +99,5 @@ body {
   font-size: 14px;
   padding: 8px;
   text-align: center;
-  border-top: 1px solid #1b1c22;
+  border-top: 1px solid var(--border);
 }

@@ -2,6 +2,9 @@
   const input = document.getElementById("input")
   const sendBtn = document.getElementById("sendBtn")
   const clearBtn = document.getElementById("clearBtn")
+  const sampleA = document.getElementById("sampleA")
+  const sampleB = document.getElementById("sampleB")
+  const sampleC = document.getElementById("sampleC")
   const responseEl = document.getElementById("response")
 
   function parseUserInput(raw) {
@@ -46,6 +49,20 @@
     show({})
   })
 
-  // Prefill example
-  input.value = '["a","1","334","4","R","$"]'
+  // Sample data buttons
+  if (sampleA) {
+    sampleA.addEventListener("click", () => {
+      input.value = '["a","1","334","4","R","$"]'
+    })
+  }
+  if (sampleB) {
+    sampleB.addEventListener("click", () => {
+      input.value = '["2","a","y","4","&","-","*","5","92","b"]'
+    })
+  }
+  if (sampleC) {
+    sampleC.addEventListener("click", () => {
+      input.value = '["A","ABcD","DOE"]'
+    })
+  }
 })()

@@ -9,13 +9,22 @@
   <body>
     <main class="container">
       <header>
-        <h1 class="title">BFHX API Console</h1>
-        <p class="subtitle">POST to <code>/bfhl</code> and view the response</p>
+        <h1 class="title">BFHX API Tester</h1>
+        <p class="subtitle">This tool helps you send a request to <code>/bfhl</code> and view the response.</p>
       </header>
 
       <section class="card">
+        <h2>How it works</h2>
+        <ol>
+          <li>Choose a sample input below or type your own list of values.</li>
+          <li>Click <strong>Send to /bfhl</strong>.</li>
+          <li>See the categorized output and totals in the Response panel.</li>
+        </ol>
+      </section>
+
+      <section class="card">
         <h2>Input</h2>
-        <p class="help">Enter a JSON array like ["a","1","334","4","R","$"] or comma-separated values like a,1,334,4,R,$</p>
+        <p class="help">You can paste a JSON array (recommended) or a comma-separated list.</p>
 
         <label class="label" for="input">Data</label>
         <textarea id="input" class="textarea" rows="6" placeholder='["a","1","334","4","R","$"]'></textarea>
@@ -23,6 +32,9 @@
         <div class="actions">
           <button id="sendBtn" class="button">Send to /bfhl</button>
           <button id="clearBtn" class="button secondary">Clear</button>
+          <button id="sampleA" class="button secondary">Fill Sample A</button>
+          <button id="sampleB" class="button secondary">Fill Sample B</button>
+          <button id="sampleC" class="button secondary">Fill Sample C</button>
         </div>
       </section>
 
@@ -32,7 +44,7 @@
       </section>
 
       <footer class="footer">
-        <span>BFHX • Node.js + HTML/CSS/JS</span>
+        <span>BFHX • Node.js + HTML/CSS/JS</span
       </footer>
     </main>
 

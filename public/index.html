@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>BFHX | Test Console</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1 class="title">BFHX API Console</h1>
+        <p class="subtitle">POST to <code>/bfhl</code> and view the response</p>
+      </header>
+
+      <section class="card">
+        <h2>Input</h2>
+        <p class="help">Enter a JSON array like ["a","1","334","4","R","$"] or comma-separated values like a,1,334,4,R,$</p>
+
+        <label class="label" for="input">Data</label>
+        <textarea id="input" class="textarea" rows="6" placeholder='["a","1","334","4","R","$"]'></textarea>
+
+        <div class="actions">
+          <button id="sendBtn" class="button">Send to /bfhl</button>
+          <button id="clearBtn" class="button secondary">Clear</button>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Response</h2>
+        <pre id="response" class="pre"></pre>
+      </section>
+
+      <footer class="footer">
+        <span>BFHX • Node.js + HTML/CSS/JS</span>
+      </footer>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

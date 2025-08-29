@@ -45,9 +45,9 @@ Root
 ```
 
 ### User Flow (High-Level)
-```
-[!user flow](appflow_apiui.png)
-```
+
+![user flow](appflow_apiui.png)
+
 
 ---
 
